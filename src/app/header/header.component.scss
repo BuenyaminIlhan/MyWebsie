@@ -1,8 +1,18 @@
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   height: 92px;
-  img {
+  padding: 10px;
+
+  .logo-img {
+    height: 30px;
+    width: 66px;
+    object-fit: cover;
+  }
+
+  .burger-icon {
     width: 40px;
+    height: 32px;
   }
 }
