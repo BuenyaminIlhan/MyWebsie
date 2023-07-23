@@ -1,10 +1,41 @@
 @font-face {
-  font-family: 'Syne', sans-serif;;
-  src: url(assets/fonts/Syne-VariableFont_wght.ttf);
+  font-family: "Syne", sans-serif;
+  src: url(assets/fonts/Syne/static/Syne-ExtraBold.ttf),
+    url(assets/fonts/Syne/Syne-VariableFont_wght.ttf),
+    url(assets/fonts/Syne/static/Syne-Bold.ttf),
+    url(assets/fonts/Syne/static/Syne-Medium.ttf),
+    url(assets/fonts/Syne/static/Syne-Regular.ttf),
+    url(assets/fonts/Syne/static/Syne-SemiBold.ttf);
 }
+
+@font-face {
+  font-family: 'Overpass', sans-serif;
+  src: url(assets/fonts/Overpass/Overpass-Italic-VariableFont_wght.ttf),
+url(assets/fonts/Overpass/Overpass-VariableFont_wght.ttf),
+url(assets/fonts/Overpass/static/Overpass-Black.ttf),
+url(assets/fonts/Overpass/static/Overpass-BlackItalic.ttf),
+url(assets/fonts/Overpass/static/Overpass-Bold.ttf),
+url(assets/fonts/Overpass/static/Overpass-BoldItalic.ttf),
+url(assets/fonts/Overpass/static/Overpass-ExtraBold.ttf),
+url(assets/fonts/Overpass/static/Overpass-ExtraBoldItalic.ttf),
+url(assets/fonts/Overpass/static/Overpass-ExtraLight.ttf),
+url(assets/fonts/Overpass/static/Overpass-ExtraLightItalic.ttf),
+url(assets/fonts/Overpass/static/Overpass-Italic.ttf),
+url(assets/fonts/Overpass/static/Overpass-Light.ttf),
+url(assets/fonts/Overpass/static/Overpass-LightItalic.ttf),
+url(assets/fonts/Overpass/static/Overpass-Medium.ttf),
+url(assets/fonts/Overpass/static/Overpass-MediumItalic.ttf),
+url(assets/fonts/Overpass/static/Overpass-Regular.ttf),
+url(assets/fonts/Overpass/static/Overpass-SemiBold.ttf),
+url(assets/fonts/Overpass/static/Overpass-SemiBoldItalic.ttf),
+url(assets/fonts/Overpass/static/Overpass-Thin.ttf),
+url(assets/fonts/Overpass/static/Overpass-ThinItalic.ttf);
+}
+
 
 body {
   margin: 0;
-  background-color: #FFFCF3;
-  padding: 0 100px
+  background-color: #fffcf3;
+  padding: 0 100px;
+  font-family: 'Overpass', sans-serif;
 }

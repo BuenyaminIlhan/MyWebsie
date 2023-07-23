@@ -1,0 +1,26 @@
+h1 {
+  font-family: 'Syne', sans-serif;
+  font-size: 112px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.line{
+  background-color: black;
+  height: 4px;
+  width: 100%;
+}
+
+.name-container {
+  display: flex;
+  align-items: center;
+  width: 55%;
+}
+
+.outer-container {
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
