@@ -32,10 +32,34 @@ url(assets/fonts/Overpass/static/Overpass-Thin.ttf),
 url(assets/fonts/Overpass/static/Overpass-ThinItalic.ttf);
 }
 
-
 body {
   margin: 0;
   background-color: #fffcf3;
   padding: 0 100px;
   font-family: 'Overpass', sans-serif;
+}
+
+.btn {
+  background-color: #fffcf3;
+  border: solid 4px black;
+  padding: 20px 60px;
+  font-size: 24px;
+  transition: 115ms;
+  cursor: pointer;
+
+  &:hover {
+    scale: 1.1;
+  }
+}
+
+h2 {
+  font-size: 58px;
+  font-family: "Syne", sans-serif;
+  margin: 0;
+  font-weight: 800;
+  cursor: default;
+
+  &:hover {
+    color: #FF9900;
+  }
 }

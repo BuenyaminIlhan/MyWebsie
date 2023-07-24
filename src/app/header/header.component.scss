@@ -3,15 +3,24 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 92px;
+  position: fixed;
+  right: 100px;
+  left: 100px;
+  background-color: #fffcf3;
+  z-index: 6;
 
-  .logo-img {
-    height: 30px;
-    width: 66px;
-    object-fit: cover;
+  img {
+    cursor: pointer;
   }
+}
 
-  .burger-icon {
-    width: 40px;
-    height: 32px;
-  }
+.logo-img {
+  height: 30px;
+  width: 66px;
+  object-fit: cover;
+}
+
+.burger-icon {
+  width: 40px;
+  height: 32px;
 }

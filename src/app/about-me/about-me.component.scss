@@ -1,0 +1,32 @@
+.about-me-container {
+  display: flex;
+  gap: 20px;
+}
+
+.left {
+  width: 50%;
+
+  p {
+    font-family: Overpass;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}
+
+.right {
+  width: 50%;
+
+  img {
+    width: 80%;
+    object-fit: contain;
+    max-width: 500px;
+  }
+}
+
+.arrow-left {
+  height: 300px;
+  object-fit: contain;
+}

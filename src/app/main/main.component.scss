@@ -1,26 +1,78 @@
 h1 {
-  font-family: 'Syne', sans-serif;
-  font-size: 112px;
+  font-family: "Syne", sans-serif;
+  font-size: calc(10px + 7vw);
   font-weight: 800;
   margin: 0;
 }
 
-.line{
+.line {
   background-color: black;
   height: 4px;
-  width: 100%;
+  width: 40%;
 }
 
 .name-container {
   display: flex;
   align-items: center;
-  width: 55%;
+  width: 100%;
+  gap: 8px;
+
+  span {
+    font-size: calc(20px + 2vw);
+    color: #ff9900;
+    font-weight: 700;
+  }
 }
 
 .outer-container {
-  height: 85vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 24px;
+  left: 100px;
+  right: 100px;
+}
+
+.line-vertical {
+  background-color: #ff9900;
+  height: 100px;
+  width: 4px;
+}
+
+.main-footer-mail {
+  transform: rotate(270deg);
+  transform-origin: left top;
+  bottom: 0;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+
+  span {
+    font-size: 24px;
+    cursor: pointer;
+  }
+}
+
+.line-scroll-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  span {
+    font-size: 24px;
+    cursor: pointer;
+  }
 }
