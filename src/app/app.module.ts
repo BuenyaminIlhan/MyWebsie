@@ -8,6 +8,9 @@ import { MainComponent } from './main/main.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { SkillsComponent } from './skills/skills.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { ContactComponent } from './contact/contact.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +19,17 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     MainComponent,
     AboutMeComponent,
     SkillsComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    ContactComponent,
+    FooterComponent
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    BrowserModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

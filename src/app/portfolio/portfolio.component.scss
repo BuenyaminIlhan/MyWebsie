@@ -9,13 +9,16 @@
   }
 }
 
-.join-container {
+.join-container,
+.sharkie,
+.pokedex {
   display: flex;
   gap: 20px;
+  padding-bottom: 50px;
 }
 
-.left,
-.right {
+.project-img-side,
+.project-description-side{
   width: 50%;
 
   img {
@@ -35,8 +38,7 @@
   }
 
   span {
-    display: flex;
-    justify-content: end;
+
     font-size: 36px;
     font-family: 'Syne', sans-serif;
     font-weight: 700;
@@ -53,4 +55,14 @@
   display: flex;
   justify-content: center;
   gap: 20px;
+}
+
+.index{
+  display: flex;
+  justify-content: end;
+}
+
+.arrow-container {
+  display: flex;
+  justify-content: flex-end;
 }

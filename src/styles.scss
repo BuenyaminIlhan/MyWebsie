@@ -35,7 +35,6 @@ url(assets/fonts/Overpass/static/Overpass-ThinItalic.ttf);
 body {
   margin: 0;
   background-color: #fffcf3;
-  padding: 0 100px;
   font-family: 'Overpass', sans-serif;
 }
 
@@ -49,6 +48,8 @@ body {
 
   &:hover {
     scale: 1.1;
+    color: #ff9900;
+    border-color: #ff9900;
   }
 }
 
