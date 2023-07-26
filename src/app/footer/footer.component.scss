@@ -1,16 +1,13 @@
 .footer {
-  padding: 0 100px 50px 100px;
+  padding: 0 150px 50px 150px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: black;
   color: white;
 }
 
 .private {
-  span {
-    //padding: 0 10px;
-  }
-
   a {
     color: white;
     text-decoration: none;
@@ -25,6 +22,34 @@
 .social-network {
   div {
     display: flex;
-    gap: 28px;
+    margin-bottom: 24px;
+    gap: 10px;
+    justify-content: flex-end;
+
+    img {
+      cursor: pointer;
+      transition: 115ms ease-in-out;
+      &:hover {
+        transform: translateY(-10px);
+      }
+    }
+  }
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  img {
+    width: 66px;
+    height: 30px;
+    object-fit: cover;
+    margin-bottom: 24px;
+    transition: 115ms ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      scale: 1.1;
+    }
   }
 }

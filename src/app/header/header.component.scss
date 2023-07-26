@@ -4,10 +4,11 @@ header {
   align-items: center;
   height: 92px;
   position: fixed;
-  right: 100px;
-  left: 100px;
+  right: 0px;
+  left: 0;
   background-color: #fffcf3;
   z-index: 6;
+  padding: 0 150px;
 
   img {
     cursor: pointer;

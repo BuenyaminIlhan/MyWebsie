@@ -34,11 +34,31 @@
     transition: 115ms ease-in-out;
     &:hover {
       color: #ff9900;
-      scale: 1.1;
+      cursor: pointer;
+    }
+
+    img {
+      &:hover {
+        scale: 1.1;
+        animation: wobble 0.5s ease infinite;
+      }
     }
     span {
       padding-top: 8px;
     }
+  }
+}
+
+@keyframes wobble {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-6deg);
+  }
+  75% {
+    transform: rotate(6deg);
   }
 }
 
