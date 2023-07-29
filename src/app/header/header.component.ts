@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  showDiv = false;
 
+  openDropDownmenu() {
+    this.showDiv = true;
+  }
+
+  closeDropDown() {
+    this.showDiv = false;
+  }
 }

@@ -1,4 +1,17 @@
 <header>
-    <img class="logo-img" src="/assets/img/logo.svg" alt="">
-    <img class="burger-icon" src="/assets/img/burger menu S3.svg" alt="">
+    <a href="#outer"><img class="logo-img" src="/assets/img/logo.svg" alt=""></a>
+    <img (click)="openDropDownmenu()" class="burger-icon" src="/assets/img/burger menu S3.svg" alt="">
+    <div class="drop-down" *ngIf="showDiv">
+        <div class="drop-down-header">
+            <a href="#outer"><img class="logo-img" src="/assets/img/logo.svg" alt=""></a>
+            <img (click)="closeDropDown()" src="/assets/img/close_button.svg" alt="">
+        </div>
+        <div class="menu">
+            <a (click)="closeDropDown()" href="#about-me">About me</a>
+            <a (click)="closeDropDown()" href="#skills">My skills</a>
+            <a (click)="closeDropDown()" href="#portfolio">Portfolio</a>
+        
+        
+        </div>
+    </div>
 </header>

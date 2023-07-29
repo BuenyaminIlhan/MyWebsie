@@ -25,3 +25,29 @@ header {
   width: 40px;
   height: 32px;
 }
+
+.drop-down {
+  height: 300px;
+  background-color: #fffcf3;
+  position: absolute;
+  left: 150px;
+  right: 150px;
+  top: 30px;
+
+  .menu {
+    padding: 0 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 32px;
+
+    a {
+      border-bottom: 4px solid black;
+      border-left: 4px solid black;
+    }
+  }
+}
+.drop-down-header {
+  display: flex;
+justify-content: space-between;
+}
