@@ -3,6 +3,7 @@ h1 {
   font-size: calc(10px + 7vw);
   font-weight: 800;
   margin: 0;
+  text-align: center;
 }
 
 .line {
@@ -26,7 +27,7 @@ h1 {
 }
 
 .outer-container {
-  height: 80vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -75,5 +76,17 @@ h1 {
   span {
     font-size: 24px;
     cursor: pointer;
+  }
+}
+
+
+@media (max-width:1200px) {
+  h1 {
+    font-size: 56px;
+  }
+
+  .main-footer {
+    left: 100px;
+    right: 100px;
   }
 }

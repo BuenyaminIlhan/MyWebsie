@@ -3,16 +3,18 @@
     <h2>Portfolio</h2>
     <p>This page is a sample of my work - please feel free to try them out.</p>
   </div>
-  <div class="join-container">
+  <div class="join-container" (mouseenter)="onMouseEnter(0)" (mouseleave)="onMouseLeave(0)">
     <div class="project-img-side">
-      <div class="border">
-        <img src="/assets/img/Join-Kanban.PNG" alt="">
-        <img class="arrow-down" src="./assets/img/arrow-down.svg" alt="">
+      <div class="border" [style.border]="isHovered[0] ? '4px solid black' : '4px solid transparent'">
+        <img src="/assets/img/Join-Kanban.PNG" alt="" [style.filter]="isHovered[1] ? 'grayscale(0)' : 'grayscale(0.7)'">
+        <img class="arrow-down" src="./assets/img/arrow-down.svg" alt=""
+        [style.display]="isHovered[0] ? 'block':'none'"
+        [style.transform]="isHovered[0] ? 'rotate(-150deg)':'rotate(0deg)'">
       </div>
     </div>
     <div class="project-description-side">
       <span class="index">01/03</span>
-      <div class="project-contain">
+      <div id="project-contain" class="project-contain" [style.display]="isHovered[0] ? 'block' : 'none'">
         <div>
           <h3>Join</h3>
         </div>
@@ -27,10 +29,10 @@
       </div>
     </div>
   </div>
-  <div class="sharkie">
+  <div class="sharkie"(mouseenter)="onMouseEnter(1)" (mouseleave)="onMouseLeave(1)">
     <div class="project-description-side">
       <span class="index">02/03</span>
-      <div class="project-contain">
+      <div id="project-contain" class="project-contain" [style.display]="isHovered[1] ? 'block' : 'none'">
         <div>
           <h3>Sharkie</h3>
         </div>
@@ -45,22 +47,26 @@
       </div>
     </div>
     <div class="project-img-side">
-      <div class="border">
-        <img src="/assets/img/Sharkie.svg" alt="">
-        <img class="arrow-down" src="./assets/img/arrow-down.svg" alt="">
+      <div class="border" [style.border]="isHovered[1] ? '4px solid black' : '4px solid transparent'">
+        <img src="/assets/img/Sharkie.svg" alt="" [style.filter]="isHovered[1] ? 'grayscale(0)' : 'grayscale(0.7)'">
+        <img class="arrow-down arrow-down-sharkie" src="./assets/img/arrow-down.svg" alt=""
+        [style.display]="isHovered[1] ? 'block':'none'"
+        [style.transform]="isHovered[1] ? 'rotate(150deg)':'rotate(0deg)'">
       </div>
     </div>
   </div>
-  <div class="pokedex">
+  <div class="pokedex"(mouseenter)="onMouseEnter(2)" (mouseleave)="onMouseLeave(2)">
     <div class="project-img-side">
-      <div class="border">
-        <img src="/assets/img/Pokedex.PNG" alt="">
-        <img class="arrow-down" src="./assets/img/arrow-down.svg" alt="">
+      <div class="border" [style.border]="isHovered[2] ? '4px solid black' : '4px solid transparent'">
+        <img src="/assets/img/Pokedex.PNG" alt="" [style.filter]="isHovered[2] ? 'grayscale(0)' : 'grayscale(0.7)'">
+        <img class="arrow-down" src="./assets/img/arrow-down.svg" alt=""
+        [style.display]="isHovered[2] ? 'block':'none'"
+        [style.transform]="isHovered[2] ? 'rotate(-150deg)':'rotate(0deg)'">
       </div>
     </div>
     <div class="project-description-side">
       <span class="index">03/03</span>
-      <div class="project-contain">
+      <div id="project-contain" class="project-contain" [style.display]="isHovered[2] ? 'block' : 'none'">
         <div>
           <h3>Pokédex</h3>
         </div>

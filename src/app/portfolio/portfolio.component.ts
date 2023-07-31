@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class PortfolioComponent {
 
+  isHovered = [false, false, false];
+
+  onMouseEnter(index: number) {
+    this.isHovered[index] = true;
+
+  }
+
+  onMouseLeave(index: number) {
+    this.isHovered[index] = false;
+  }
 }

@@ -11,6 +11,10 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
+import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { ContentComponent } from './content/content.component';
+
 
 @NgModule({
   declarations: [
@@ -21,7 +25,10 @@ import { FooterComponent } from './footer/footer.component';
     SkillsComponent,
     PortfolioComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    LegalNoticeComponent,
+    PrivacyPolicyComponent,
+    ContentComponent,
 
   ],
   imports: [

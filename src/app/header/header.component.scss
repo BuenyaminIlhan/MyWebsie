@@ -6,6 +6,7 @@ header {
   position: fixed;
   right: 0px;
   left: 0;
+  top: 0;
   background-color: #fffcf3;
   z-index: 6;
   padding: 0 150px;
@@ -27,19 +28,18 @@ header {
 }
 
 .drop-down {
-  height: 300px;
   background-color: #fffcf3;
   position: absolute;
   left: 150px;
   right: 150px;
-  top: 30px;
+  top: 28px;
 
   .menu {
-    padding: 0 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 32px;
+    gap: 30px;
 
     a {
       border-bottom: 4px solid black;
@@ -47,7 +47,14 @@ header {
     }
   }
 }
+
 .drop-down-header {
   display: flex;
-justify-content: space-between;
+  justify-content: space-between;
+}
+
+@media (max-width:1200px) {
+  header {
+    padding: 0 100px;
+  }
 }

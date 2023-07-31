@@ -51,7 +51,7 @@ body {
   cursor: pointer;
 
   &:hover {
-    scale: 1.1;
+    transform: scaleX(1.06);
     color: #ff9900;
     border-color: #ff9900;
   }
@@ -74,4 +74,20 @@ a {
   text-decoration: none;
   color: black;
   cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .btn {
+    padding: 15px 40px;
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 760px) {
+  h2 {
+    font-size: 30px;
+  }
 }

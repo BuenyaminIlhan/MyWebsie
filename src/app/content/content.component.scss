@@ -1,0 +1,13 @@
+.main {
+  height: 100vh;
+}
+
+.wrapper {
+  padding: 0 150px;
+}
+
+@media (max-width:1200px) {
+  .wrapper{
+    padding: 0 100px;
+  }
+}

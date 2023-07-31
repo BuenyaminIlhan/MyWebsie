@@ -1,3 +1,4 @@
+import { ScrollService } from './service-scroll/service-scroll.component';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'My-Website';
 }
