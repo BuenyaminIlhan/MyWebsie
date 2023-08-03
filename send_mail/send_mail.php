@@ -42,7 +42,7 @@ switch ($_SERVER['REQUEST_METHOD']) {
         $headers = "From: norply@ilhan-buenyamin.com";
 
         #mail($recipient, $subject, $_POST['message'], $headers, $_POST['email']);
-        mail($recipient, $subject, $headers, $_POST['message'], $_POST['email']);
+        mail($recipient, $subject, $_POST['email'], $_POST['message'], $headers,);
         header("Location: " . $redirect);
 
         break;
