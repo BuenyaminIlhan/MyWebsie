@@ -10,7 +10,21 @@ h1 {
   background-color: black;
   height: 4px;
   width: 100%;
+  transition: all 115ms ease-in-out;
+  animation: pulse 3s infinite;
 }
+
+@keyframes pulse {
+    0% {
+      background-color: #ff9900;
+    }
+    50% {
+      background-color: black;
+    }
+    100% {
+      background-color: #ff9900;
+    }
+  }
 
 .name-container {
   display: flex;
@@ -50,6 +64,27 @@ h1 {
   width: 4px;
 }
 
+.white-point {
+  position: absolute;
+  top: -10px; /* Position des weißen Punktes über der Linie */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #fffcf3;
+  animation: slideDown 1s infinite ease-in-out; /* Hier wird die Animation definiert */
+}
+
+@keyframes slideDown {
+  0% {
+    top: -10px; /* Startposition des weißen Punktes */
+  }
+  100% {
+    top: 100px; /* Endposition des weißen Punktes (200px Linienhöhe + 10px Abstand) */
+  }
+}
+
 .main-footer-mail {
   transform: rotate(270deg);
   transform-origin: left top;
@@ -79,14 +114,57 @@ h1 {
   }
 }
 
-
-@media (max-width:1200px) {
+@media (max-width: 1200px) {
   h1 {
-    font-size: 56px;
+    font-size: 60px;
   }
 
   .main-footer {
     left: 100px;
     right: 100px;
+  }
+}
+
+@media(max-width:900px) {
+  h1 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 625px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  .name-container {
+    span {
+      font-size: 20px;
+    }
+  }
+
+  .main-footer-mail {
+    span {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width:900px) {
+  .main-footer {
+    left: 50px;
+    right: 50px;
+  }
+}
+
+@media (max-width:625px) {
+  .main-footer {
+    left: 16px;
+    right: 16px;
+  }
+
+  .line-scroll-container {
+    span {
+      font-size: 16px;
+    }
   }
 }

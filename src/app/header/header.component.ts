@@ -6,13 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-  showDiv = false;
 
   openDropDownmenu() {
-    this.showDiv = true;
+    document.getElementById('drop-down').style.transform = 'translateY(0)';
   }
 
   closeDropDown() {
-    this.showDiv = false;
+    document.getElementById('drop-down').style.transform = 'translateY(-103vh)';
+  }
+
+  scrollToTop(): void {
+    window.scrollTo(0, 0);
   }
 }

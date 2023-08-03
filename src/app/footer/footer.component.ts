@@ -10,5 +10,4 @@ export class FooterComponent {
   scrollToTop(): void {
     window.scrollTo(0, 0);
   }
-
 }

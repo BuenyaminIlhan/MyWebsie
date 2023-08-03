@@ -1,4 +1,4 @@
-<section>
+<section class="footer-section">
   <div class="arrow">
     <a (click)="scrollToTop()">
       <img src="/assets/img/arrow-top.svg" alt="">
@@ -7,7 +7,6 @@
   <div class="footer">
     <div class="left">
       <a routerLink="/" (click)="scrollToTop()"><img src="/assets/img/logo_white.svg" alt=""></a>
-      <span>© Bünyamin Ilhan 2023</span>
     </div>
     <div class="social-network">
       <div>
@@ -21,11 +20,14 @@
           <img src="/assets/img/LinkedIn-icon.svg" alt="">
         </a>
       </div>
-      <div class="private">
-        <a routerLink="legal-notice">Legal notice </a>
-        <span>|</span>
-        <a routerLink="privac-policy">Privacy policy</a>
-      </div>
+    </div>
+  </div>
+  <div class="private">
+    <span>© Bünyamin Ilhan 2023</span>
+    <div class="links">
+      <a routerLink="/legal-notice">Legal notice </a>
+      <span>|</span>
+      <a routerLink="/privacy-policy">Privacy policy</a>
     </div>
   </div>
 </section>

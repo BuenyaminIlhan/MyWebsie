@@ -1,15 +1,23 @@
-<section class="contact">
+<section id="contact" class="contact">
   <div class="outer-container">
     <h2>Say Hi!</h2>
     <div>
       <h3>Want to discuss a new project?</h3>
       <p>Say hello! let's discuss your ideas and make it happen</p>
-      <form (submit)="sendMail()" ngNativeValidate #myForm>
-        <input required type="text" placeholder="Your name" name="name" #nameField>
-        <input required type="email" placeholder="Your email" name="email" #mailField>
-        <textarea required name="message" id="message" placeholder="Your message" cols="30" rows="10" #messageField></textarea>
-        <button class="btn" #button>Send message</button>
-      </form>
+      <div class="form">
+        <div class="send-message">
+          <h1>
+            Nachricht gesendet
+          </h1>
+        </div>
+        <form class="form-content" (submit)="sendMail()" ngNativeValidate #myForm>
+          <input required type="text" placeholder="Your name" name="name" #nameField>
+          <input required type="email" placeholder="Your email" name="email" #mailField>
+          <textarea required name="message" id="message" placeholder="Your message" cols="30" rows="10"
+            #messageField></textarea>
+          <button class="btn" #button>Send message</button>
+        </form>
+      </div>
     </div>
   </div>
 </section>

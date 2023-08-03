@@ -4,7 +4,6 @@
 
 .icon-container {
   border: solid 4px black;
-  width: 100%;
 }
 
 .skills-headline {
@@ -64,8 +63,35 @@
 
 .arrow-right {
   img {
-    width: 80%;
+    padding-top: 50px;
+    margin-bottom: -100px;
+    width: 25%;
     object-fit: contain;
     max-width: 500px;
   }
+}
+
+@media (max-width:900px) {
+  .icons {
+    img {
+      width: 40px;
+    }
+
+    span {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width:760px) {
+  .skills-headline {
+    margin-top: -22px;
+    left: 70px;
+  }
+}
+
+@media (max-width:625px) {
+.skills {
+  padding-top: 50px;
+}
 }

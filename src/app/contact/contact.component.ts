@@ -14,6 +14,7 @@ export class ContactComponent {
 
 
   async sendMail() {
+
     let nameField = this.nameField.nativeElement;
     let mailField = this.mailField.nativeElement;
     let messageField = this.messageField.nativeElement;

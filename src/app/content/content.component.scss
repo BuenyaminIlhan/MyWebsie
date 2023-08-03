@@ -6,8 +6,20 @@
   padding: 0 150px;
 }
 
-@media (max-width:1200px) {
-  .wrapper{
+@media (max-width: 1200px) {
+  .wrapper {
     padding: 0 100px;
+  }
+}
+
+@media (max-width: 900px) {
+  .wrapper {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 625px) {
+  .wrapper {
+    padding: 0 16px;
   }
 }

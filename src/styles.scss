@@ -45,7 +45,7 @@ body {
 .btn {
   background-color: #fffcf3;
   border: solid 4px black;
-  padding: 20px 60px;
+  padding: 15px 50px;
   font-size: 24px;
   transition: 115ms;
   cursor: pointer;
@@ -83,6 +83,13 @@ a {
   }
   h2 {
     font-size: 40px;
+  }
+}
+
+@media (max-width: 900px) {
+  .btn {
+    padding: 10px 30px;
+    font-size: 16px;
   }
 }
 
