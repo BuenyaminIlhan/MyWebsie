@@ -2,7 +2,7 @@
 
 ########### CONFIG ###############
 
-$recipient = 'ilhan.buenyamin@gmail.com'; # Bitte hier deine E-Mail angeben
+$recipient = 'mail@ilhan-buenyamin.com'; # Bitte hier deine E-Mail angeben
 $redirect = 'success.html';
 
 ########### CONFIG END ###########
@@ -40,9 +40,12 @@ switch ($_SERVER['REQUEST_METHOD']) {
 
         $subject = "Contact From " . $_POST['name'];
         $headers = "From: norply@ilhan-buenyamin.com";
+        $message = "Name: " . $_POST['name'] . "\n";
+        $message .= "Email: " . $_POST['email'] . "\n\n";
+        $message .= "Message: " . $_POST['message'];
 
         #mail($recipient, $subject, $_POST['message'], $headers, $_POST['email']);
-        mail($recipient, $subject, $_POST['email'], $_POST['message'], $headers,);
+        mail($recipient, $subject, $message, $headers);
         header("Location: " . $redirect);
 
         break;

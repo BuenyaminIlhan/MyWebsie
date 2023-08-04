@@ -5,12 +5,12 @@
       <h3>Want to discuss a new project?</h3>
       <p>Say hello! let's discuss your ideas and make it happen</p>
       <div class="form">
-        <div class="send-message">
+        <div id="send-message" class="send-message">
           <h1>
-            Nachricht gesendet
+            Got your message! Will reply shortly. Thanks!
           </h1>
         </div>
-        <form class="form-content" (submit)="sendMail()" ngNativeValidate #myForm>
+        <form id="form" class="form-content" (submit)="sendMail()" ngNativeValidate #myForm>
           <input required type="text" placeholder="Your name" name="name" #nameField>
           <input required type="email" placeholder="Your email" name="email" #mailField>
           <textarea required name="message" id="message" placeholder="Your message" cols="30" rows="10"

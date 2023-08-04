@@ -1,7 +1,7 @@
 <section class="footer-section">
   <div class="arrow">
     <a (click)="scrollToTop()">
-      <img src="/assets/img/arrow-top.svg" alt="">
+      <img *ngIf="!hide" src="/assets/img/arrow-top.svg" alt="">
     </a>
   </div>
   <div class="footer">
