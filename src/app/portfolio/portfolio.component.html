@@ -3,85 +3,149 @@
     <h2>Portfolio</h2>
     <p>This page is a sample of my work - please feel free to try them out.</p>
   </div>
-  <div class="join-container" (mouseenter)="onMouseEnter(0)" (mouseleave)="onMouseLeave(0)">
-    <div class="project-img-side">
-      <div class="border" [style.border]="isHovered[0] ? '4px solid black' : '4px solid transparent'">
-        <img src="/assets/img/Join-Kanban.PNG" alt="" [style.filter]="isHovered[0] ? 'grayscale(0)' : 'grayscale(0.7)'">
-        <img id="arrow-down2" class="arrow-down" src="./assets/img/arrow-down.svg" alt=""
-        [style.display]="isHovered[0] ? 'block':'none'">
-      </div>
+    <!-- Zephir -->
+<div class="join-container" (mouseenter)="onMouseEnter(0)" (mouseleave)="onMouseLeave(0)">
+  <div class="project-img-side">
+    <div class="border" [style.border]="isHovered[0] ? '4px solid black' : '4px solid transparent'">
+      <img src="/assets/img/Zephir.png" alt="" [style.filter]="isHovered[0] ? 'grayscale(0)' : 'grayscale(0.7)'">
+      <img id="arrow-down" class="arrow-down" src="./assets/img/arrow-down.svg" alt=""
+        [style.display]="isHovered[0] ? 'block' : 'none'">
     </div>
-    <div class="project-description-side"
+  </div>
+  <div class="project-description-side"
     [style.visibility]="isHovered[0] ? 'visible' : 'hidden'"
     [style.transform]="isHovered[0] ? 'translateX(0px)' : 'translateX(-442px)'">
-      <span class="index">01/03</span>
-      <div id="project-contain" class="project-contain">
-        <div>
-          <h3>Join</h3>
-        </div>
-        <span>JavaScript | HTML | CSS</span>
-        <p>Task manager inspired by the Kanban Sytem. Create and organize tasks using drag and drop functions, assign
-          users and categories.</p>
-        <div class="btn-container">
-          <a href="https://ilhan-buenyamin.com/Join-Kanban/" target="_blank"><button class="btn">LiveDemo</button></a>
-          <a href="https://github.com/BuenyaminIlhan/Join-Kanban" target="_blank"><button
-              class="btn">GitHub</button></a>
-        </div>
+    <span class="index">01/05</span>
+    <div id="project-contain" class="project-contain">
+      <div>
+        <h3>Zephir</h3>
+      </div>
+      <span>Swift | Swift UI | Firebase | Google API</span>
+      <p>Your Quotation App – Everything at a Glance.
+
+        Zephir helps small businesses create professional quotes instantly, saving time and boosting productivity—on any device.</p>
+      <div class="btn-container">
+        <a href="https://www.figma.com/proto/yM5J0JLIIQroRnEABYY301/Zephir_IOS?page-id=99%3A59&node-id=99-63&viewport=710%2C-2011%2C0.41&t=o081hi0UvT5Mt22r-1&scaling=contain&content-scaling=fixed" target="_blank"><button class="btn">Explore Pitch</button></a>
+        <a href="https://github.com/SI-Classroom-Batch-019/abschlussprojekt-BuenyaminIlhan" target="_blank"><button class="btn">GitHub</button></a>
       </div>
     </div>
   </div>
-  <div class="sharkie"(mouseenter)="onMouseEnter(1)" (mouseleave)="onMouseLeave(1)">
-    <div class="project-description-side"
+</div>
+
+<!-- Labbayk -->
+<div class="sharkie" (mouseenter)="onMouseEnter(1)" (mouseleave)="onMouseLeave(1)">
+  <div class="project-description-side"
     [style.visibility]="isHovered[1] ? 'visible' : 'hidden'"
     [style.transform]="isHovered[1] ? 'translateX(0px)' : 'translateX(442px)'">
-      <span class="index">02/03</span>
-      <div id="project-contain" class="project-contain">
-        <div>
-          <h3>Sharkie</h3>
-        </div>
-        <span>JavaScript | HTML | CSS</span>
-        <p>Embark on a simple game driven by an object-oriented approach. Join Sharkie's adventure to uncover poisons
-          and
-          take on the enraged Shark End Boss.</p>
-        <div class="btn-container">
-          <a href="https://ilhan-buenyamin.com/Sharkie/" target="_blank"><button class="btn">LiveDemo</button></a>
-          <a href="https://github.com/BuenyaminIlhan/Sharkie" target="_blank"><button class="btn">GitHub</button></a>
-        </div>
+    <span class="index">02/05</span>
+    <div id="project-contain" class="project-contain">
+      <div>
+        <h3>Labbayk</h3>
       </div>
-    </div>
-    <div class="project-img-side">
-      <div class="border" [style.border]="isHovered[1] ? '4px solid black' : '4px solid transparent'">
-        <img src="/assets/img/Sharkie.png" alt="" [style.filter]="isHovered[1] ? 'grayscale(0)' : 'grayscale(0.7)'">
-        <img id="arrow-down" class="arrow-down arrow-down-sharkie" src="./assets/img/arrow-down.svg" alt=""
-        [style.display]="isHovered[1] ? 'block':'none'">
+      <span>Kotlin | JetpackCompose | Room DB</span>
+      <p>The Quran in Different Languages
+
+        Always free and available offline in 90 languages for recitation and reference.</p>
+      <div class="btn-container">
+        <a href="https://www.figma.com/proto/C6KuxVx0iJFaaBsa6aapvH/Labbayk?page-id=31%3A50&node-id=31-74&p=f&viewport=696%2C-2210%2C0.54&t=wEXwGIiS4lfyWauH-1&scaling=contain&content-scaling=fixed" target="_blank"><button class="btn">Explore Pitch</button></a>
+        <a href="https://github.com/BuenyaminIlhan/Labbayk/tree/master" target="_blank"><button class="btn">GitHub</button></a>
       </div>
     </div>
   </div>
-  <div class="pokedex"(mouseenter)="onMouseEnter(2)" (mouseleave)="onMouseLeave(2)">
-    <div class="project-img-side">
-      <div class="border" [style.border]="isHovered[2] ? '4px solid black' : '4px solid transparent'">
-        <img src="/assets/img/Pokedex.PNG" alt="" [style.filter]="isHovered[2] ? 'grayscale(0)' : 'grayscale(0.7)'">
-        <img id="arrow-down3" class="arrow-down" src="./assets/img/arrow-down.svg" alt=""
-        [style.display]="isHovered[2] ? 'block':'none'">
-      </div>
+  <div class="project-img-side">
+    <div class="border" [style.border]="isHovered[1] ? '4px solid black' : '4px solid transparent'">
+      <img src="/assets/img/Labbayk.png" alt="" [style.filter]="isHovered[1] ? 'grayscale(0)' : 'grayscale(0.7)'">
+      <img id="arrow-down1" class="arrow-down arrow-down-labbayk" src="./assets/img/arrow-down.svg" alt=""
+        [style.display]="isHovered[1] ? 'block' : 'none'">
     </div>
-    <div class="project-description-side"
+  </div>
+</div>
+
+<!-- Join -->
+<div class="join-container" (mouseenter)="onMouseEnter(2)" (mouseleave)="onMouseLeave(2)">
+  <div class="project-img-side">
+    <div class="border" [style.border]="isHovered[2] ? '4px solid black' : '4px solid transparent'">
+      <img src="/assets/img/Join-Kanban.PNG" alt="" [style.filter]="isHovered[2] ? 'grayscale(0)' : 'grayscale(0.7)'">
+      <img id="arrow-down2" class="arrow-down" src="./assets/img/arrow-down.svg" alt=""
+        [style.display]="isHovered[2] ? 'block' : 'none'">
+    </div>
+  </div>
+  <div class="project-description-side"
     [style.visibility]="isHovered[2] ? 'visible' : 'hidden'"
     [style.transform]="isHovered[2] ? 'translateX(0px)' : 'translateX(-442px)'">
-      <span class="index">03/03</span>
-      <div id="project-contain" class="project-contain">
-        <div>
-          <h3>Pokédex</h3>
-        </div>
-        <span>JavaScript | API | HTML | CSS </span>
-        <p>Based on the PokéAPI a simple library that provides and catalogues pokémon information.</p>
-        <div class="btn-container">
-          <a href="https://ilhan-buenyamin.com/Pokedex/" target="_blank"><button class="btn">LiveDemo</button></a>
-          <a href="https://github.com/BuenyaminIlhan/Pokedex" target="_blank"><button class="btn">GitHub</button></a>
-        </div>
+    <span class="index">03/05</span>
+    <div id="project-contain" class="project-contain">
+      <div>
+        <h3>Join</h3>
+      </div>
+      <span>JavaScript | HTML | CSS</span>
+      <p>Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign
+        users and categories.</p>
+      <div class="btn-container">
+        <a href="https://ilhan-buenyamin.com/Join-Kanban/" target="_blank"><button class="btn">LiveDemo</button></a>
+        <a href="https://github.com/BuenyaminIlhan/Join-Kanban" target="_blank"><button class="btn">GitHub</button></a>
       </div>
     </div>
   </div>
+</div>
+
+<!-- Sharkie -->
+<div class="sharkie" (mouseenter)="onMouseEnter(3)" (mouseleave)="onMouseLeave(3)">
+  <div class="project-description-side"
+    [style.visibility]="isHovered[3] ? 'visible' : 'hidden'"
+    [style.transform]="isHovered[3] ? 'translateX(0px)' : 'translateX(442px)'">
+    <span class="index">04/05</span>
+    <div id="project-contain" class="project-contain">
+      <div>
+        <h3>Sharkie</h3>
+      </div>
+      <span>JavaScript | HTML | CSS</span>
+      <p>Embark on a simple game driven by an object-oriented approach. Join Sharkie's adventure to uncover poisons
+        and take on the enraged Shark End Boss.</p>
+      <div class="btn-container">
+        <a href="https://ilhan-buenyamin.com/Sharkie/" target="_blank"><button class="btn">LiveDemo</button></a>
+        <a href="https://github.com/BuenyaminIlhan/Sharkie" target="_blank"><button class="btn">GitHub</button></a>
+      </div>
+    </div>
+  </div>
+  <div class="project-img-side">
+    <div class="border" [style.border]="isHovered[3] ? '4px solid black' : '4px solid transparent'">
+      <img src="/assets/img/Sharkie.png" alt="" [style.filter]="isHovered[3] ? 'grayscale(0)' : 'grayscale(0.7)'">
+      <img id="arrow-down3" class="arrow-down arrow-down-sharkie" src="./assets/img/arrow-down.svg" alt=""
+        [style.display]="isHovered[3] ? 'block' : 'none'">
+    </div>
+  </div>
+</div>
+
+<!-- DA - Bubble -->
+<div class="join-container" (mouseenter)="onMouseEnter(4)" (mouseleave)="onMouseLeave(4)">
+  <div class="project-img-side">
+    <div class="border" [style.border]="isHovered[4] ? '4px solid black' : '4px solid transparent'">
+      <img src="/assets/img/DA-Bubble.png" alt="" [style.filter]="isHovered[4] ? 'grayscale(0)' : 'grayscale(0.7)'">
+      <img id="arrow-down4" class="arrow-down" src="./assets/img/arrow-down.svg" alt=""
+        [style.display]="isHovered[4] ? 'block' : 'none'">
+    </div>
+  </div>
+  <div class="project-description-side"
+    [style.visibility]="isHovered[4] ? 'visible' : 'hidden'"
+    [style.transform]="isHovered[4] ? 'translateX(0px)' : 'translateX(-442px)'">
+    <span class="index">05/05</span>
+    <div id="project-contain" class="project-contain">
+      <div>
+        <h3>DA - Bubble (Slack Clone)</h3>
+      </div>
+      <span>Angular | TypeScript | Firebase | HTML | SCSS</span>
+      <p>The web application allows authentication via a Google account, 
+        chatting in channels, and replying to messages in custom threads, with Google Firebase used as the backend.</p>
+      <div class="btn-container">
+        <a href="https://da-bubble.ilhan-buenyamin.com/" target="_blank"><button class="btn">LiveDemo</button></a>
+        <a href="https://github.com/BuenyaminIlhan/Da-Bubble" target="_blank"><button class="btn">GitHub</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
   <div class="arrow-container">
     <img class="arrow-left" src="/assets/img/Arrow-left.svg" alt="">
   </div>

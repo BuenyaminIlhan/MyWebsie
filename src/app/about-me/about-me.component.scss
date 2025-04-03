@@ -6,6 +6,9 @@
 
 .left {
   width: 50%;
+  h2 {
+    font-size: 36px;
+  }
 
   p {
     font-family: Overpass;
@@ -24,6 +27,7 @@
     width: 80%;
     object-fit: contain;
     max-width: 500px;
+    border-radius: 15px;
   }
 }
 

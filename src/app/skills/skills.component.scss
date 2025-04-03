@@ -15,6 +15,7 @@
 
   h2 {
     padding: 0 16px;
+    font-size: 36px;
   }
 }
 
@@ -37,6 +38,7 @@
     }
 
     img {
+      width: 70px;
       &:hover {
         scale: 1.1;
         animation: wobble 0.5s ease infinite;

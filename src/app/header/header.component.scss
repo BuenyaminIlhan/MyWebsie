@@ -44,16 +44,18 @@ header {
 }
 
 .drop-down {
-  background-color: #fffcf3;
+  background-color: #fffcf3ee;
   position: absolute;
-  left: 0;
   right: 0;
-  width: 100%;
+  width: 40%;
+  height: 80vh;
   top: 28px;
-  height: 100vh;
-  transform: translateY(-103vh);
-  transition: all 115ms ease-in-out;
+  transform: translateY(-85vh);
+  transition: transform 215ms ease-in-out; 
+  border-bottom-left-radius: 15px; 
+  border-bottom-right-radius: 15px; 
 }
+
 
 .links {
   display: flex;
@@ -116,10 +118,12 @@ header {
   background-image: url("/assets/img/Contact-Background.svg");
   object-fit: contain;
   background-repeat: no-repeat;
-  height: 450px;
+  height: 240px;
   width: 100%;
   position: absolute;
-  bottom: 16px;
+  bottom: 0;
+  border-bottom-left-radius: 15px; 
+  border-bottom-right-radius: 15px; 
 }
 
 .drop-down-footer {
@@ -194,6 +198,12 @@ header {
   }
 }
 @media (max-width: 625px) {
+
+.drop-down {
+    width: 70%;
+    height: 65vh;
+  }
+
   .drop-down-contact {
     left: 16px !important;
     right: 16px !important;

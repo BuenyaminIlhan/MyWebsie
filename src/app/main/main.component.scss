@@ -1,6 +1,6 @@
 h1 {
   font-family: "Syne", sans-serif;
-  font-size: calc(10px + 7vw);
+  font-size: 7vw;
   font-weight: 800;
   margin: 0;
   text-align: center;
@@ -95,6 +95,9 @@ h1 {
   top: 0;
 
   span {
+    &:hover {
+      color: #ff9900;
+    }
     font-size: 24px;
     cursor: pointer;
   }
@@ -109,6 +112,9 @@ h1 {
   right: 0;
 
   span {
+    &:hover {
+      color: #ff9900;
+    }
     font-size: 24px;
     cursor: pointer;
   }
@@ -145,6 +151,7 @@ h1 {
   .main-footer-mail {
     span {
       font-size: 16px;
+
     }
   }
 }

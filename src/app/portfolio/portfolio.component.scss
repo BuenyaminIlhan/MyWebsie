@@ -6,6 +6,7 @@
   padding-top: 150px;
   h2 {
     text-align: center;
+    font-size: 36px;
   }
   p {
     font-size: 24px;
@@ -21,13 +22,16 @@
   }
 }
 
-.arrow-down-sharkie {
+.arrow-down-sharkie,
+.arrow-down-labbayk {
   left: -24px;
 }
 
 .join-container,
 .sharkie,
-.pokedex {
+.pokedex
+.labbayk,
+.zephir {
   display: flex;
   justify-content: center;
   align-items: center;
